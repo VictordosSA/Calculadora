@@ -15,36 +15,37 @@ import javax.persistence.Id;
  * @author 04592828240
  */
 @Entity
-public class User {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_User;
-    private String use_User;
-    private String s_User;
+    private Integer id;
+    private String user;
+    private String senha;
 
-    public Integer getId_User() {
-        return id_User;
+    public Integer getId() {
+        return id;
     }
 
-    public void setId_User(Integer id_User) {
-        this.id_User = id_User;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getUse_User() {
-        return use_User;
+    public String getUser() {
+        return user;
     }
 
-    public void setUse_User(String use_User) {
-        this.use_User = use_User;
+    public void setUser(String user) {
+        this.user = user;
     }
 
-    public String getS_User() {
-        return s_User;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setS_User(String s_User) {
-        this.s_User = s_User;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
+    
 }

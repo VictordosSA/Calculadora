@@ -23,47 +23,52 @@ public class Historico {
     private Integer id;
     private double num1;
     private double num2;
-    private String op;
     private double result;
-
-    public Integer getId_His() {
-        return id;
-    }
-
-    public void setId_His(Integer id_His) {
-        this.id = id_His;
-    }
-
-    public double getNum1_His() {
-        return num1;
-    }
-
-    public void setNum1_His(double num1_His) {
-        this.num1 = num1_His;
-    }
-
-    public double getNum2_His() {
-        return num2;
-    }
-
-    public void setNum2_His(double num2_His) {
-        this.num2 = num2_His;
-    }
-
-    public String getOp_His() {
+    private String op;
+    
+    
+    public String toString (){
         return op;
     }
 
-    public void setOp_His(String op_His) {
-        this.op = op_His;
+    public Integer getId() {
+        return id;
     }
 
-    public double getResult_His() {
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public double getNum1() {
+        return num1;
+    }
+
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+
+    public double getNum2() {
+        return num2;
+    }
+
+    public void setNum2(double num2) {
+        this.num2 = num2;
+    }
+
+    public double getResult() {
         return result;
     }
 
-    public void setResult_His(double result_His) {
-        this.result = result_His;
+    public void setResult(double result) {
+        this.result = result;
+    }
+
+    public String getOp() {
+        return op;
+    }
+
+    public void setOp(String op) {
+        this.op = op;
     }
 
 }

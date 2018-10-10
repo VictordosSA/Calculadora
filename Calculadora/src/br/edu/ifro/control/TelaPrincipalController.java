@@ -91,10 +91,10 @@ public class TelaPrincipalController implements Initializable {
         EntityManager em = emf.createEntityManager();
         
         Historico historico = new Historico();
-        historico.setNum1_His(Double.parseDouble(txtNumero1.getText()));
-        historico.setNum2_His(Double.parseDouble(txtNumero2.getText()));
-        historico.setResult_His(Double.parseDouble(txtResultado.getText()));
-        historico.setOp_His(operação);
+        historico.setNum1(Double.parseDouble(txtNumero1.getText()));
+        historico.setNum2(Double.parseDouble(txtNumero2.getText()));
+        historico.setResult(Double.parseDouble(txtResultado.getText()));
+        historico.setOp(operação);
         
         em.getTransaction().begin();
         em.persist(historico);
@@ -113,7 +113,7 @@ public class TelaPrincipalController implements Initializable {
     public void lista(){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("Calculadora");
         EntityManager em = emf.createEntityManager();
-        Query query = em.createQuery ("FROM Historico");
+        Query query = em.createQuery ("SELECT a FROM Historico as a");
         List<Historico> historico = query.getResultList();
         ObservableList obHistorico = FXCollections.observableArrayList(historico);
         tbHistorico.setItems(obHistorico);

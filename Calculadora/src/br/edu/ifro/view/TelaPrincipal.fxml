@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import java.util.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.* ?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -20,27 +22,27 @@
       <Button layoutX="200.0" layoutY="102.0" onAction="#divisao" prefHeight="25.0" prefWidth="91.0" text="Divisão" />
       <TableView fx:id="tbHistorico" editable="true" layoutX="4.0" layoutY="149.0" prefHeight="200.0" prefWidth="298.0">
         <columns>
-          <TableColumn fx:id="colID" prefWidth="32.0" sortable="false" text="ID">
+          <TableColumn text="ID">
               <cellValueFactory>
                   <PropertyValueFactory property="id"/>
               </cellValueFactory>
           </TableColumn>
-          <TableColumn fx:id="colX" prefWidth="57.0" sortable="false" text="X" >
+          <TableColumn text="X" >
             <cellValueFactory>
                   <PropertyValueFactory property="num1"/>
             </cellValueFactory>
           </TableColumn>
-          <TableColumn fx:id="colOp" sortable="false" text="OPERAÇÃO">
+          <TableColumn text="OPERAÇÃO">
           <cellValueFactory>
                   <PropertyValueFactory property="op"/>
               </cellValueFactory>
           </TableColumn>
-          <TableColumn fx:id="colY" prefWidth="60.0" sortable="false" text="Y">
+          <TableColumn text="Y">
             <cellValueFactory>
                   <PropertyValueFactory property="num2"/>
             </cellValueFactory>
           </TableColumn>  
-          <TableColumn fx:id="collResult" prefWidth="67.0" sortable="false" text="RESULT.">
+          <TableColumn text="RESULT.">
               <cellValueFactory>
                   <PropertyValueFactory property="result"/>
               </cellValueFactory>
